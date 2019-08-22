@@ -1,0 +1,2 @@
+Insert into Contacts (id, firstname, lastname, phone, email, Relationship, Address, City, State, Birthday, Favorite, lastcontact)
+values (30, 'Alex', 'Gobran', '513-333-2222', 'alex@yea.com', 'Self', (123 'Bull st'), 'Cincinnati', 'OH', 12/29/1988, 'yes', 08/22/2019);
