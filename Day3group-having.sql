@@ -32,5 +32,25 @@ from customers
 group by city
 having sum(sales) > 600000
 order by sum(sales) desc
-/*
+*/
 
+--can use top (#) command to get top 
+
+select top 3 * from customers order by sales 
+
+--want to look at rows with specific Id's
+select * from customers 
+ where id in (1, 27, 34)
+ order by sales desc
+
+ select id from customers 
+ where Name in ('Kroger', 'Nationwide', 'Abercrombie Fitch')
+
+ --Using 'where Id in' and 'where name in'
+ select * from customers 
+ where id in (select id from customers 
+ where Name in ('Kroger', 'Nationwide', 'Abercrombie Fitch'))
+
+
+ select * from Orders;
+ select * from OrderLines;
